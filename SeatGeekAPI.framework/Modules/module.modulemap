@@ -1,0 +1,6 @@
+framework module SeatGeekAPI {
+  umbrella header "SeatGeekAPI.h"
+
+  export *
+  module * { export * }
+}

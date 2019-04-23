@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire" ~> 4.5
+github "onevcat/Kingfisher" ~> 5.0
+github "jdg/MBProgressHUD" ~> 1.1.0
+github "ashleymills/Reachability.swift"
+github "AFNetworking/AFNetworking" ~> 3.0

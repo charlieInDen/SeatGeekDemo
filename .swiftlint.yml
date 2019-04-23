@@ -1,0 +1,36 @@
+# Exclude directories that you don't want to lint
+excluded:
+  - Carthage
+  - SeatDemoTests
+  - SeatDemoUITests
+  - SeatGeekDemo/Frameworks
+
+# Use "xcode" so that when you build, the result will be shown in Xcode
+reporter: "xcode" # Other reporters: json, csv, checkstyle, junit, html, emoji
+
+# The rule `function_body_length` by default triggers warning at 40, error at 100
+function_body_length:
+  warning: 120
+  error: 200
+
+line_length:
+  warning: 250
+  error: 250
+  ignores_comments: true
+  ignores_urls: true
+  ignores_function_declarations: true
+identifier_name:
+  min_length: 2
+  max_length:
+    warning: 90
+    error: 120
+  excluded:
+   - ip
+
+disabled_rules:
+   - implicit_getter
+   - file_length
+   - multiple_closures_with_trailing_closure
+   - cyclomatic_complexity
+   - type_body_length
+   - weak_delegate
